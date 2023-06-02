@@ -20,17 +20,17 @@
           <div class="line">
             <!-- пользователь указывает нижнюю границу weight -->
             <div>min weight:</div>
-            <input class="minweight__input" />
+            <input id="min-weight-input" class="minweight__input" />
           </div>
 
           <div class="line">
             <!-- пользователь указывает верхнюю границу weight -->
             <div>max weight:</div>
-            <input class="maxweight__input" />
+            <input id="max-weight-input" class="maxweight__input" />
           </div>
 
           <!-- TODO: при нажатии элементы массива фильтруются в пределах [minweight, maxweight] -->
-          <button class="filter__btn line">Фильтровать</button>
+          <button id="filter-btn" class="filter__btn line">Фильтровать</button>
 
           <div class="line">
             <span>Алгоритм сортировки:</span>
@@ -99,7 +99,10 @@
               <div>color: розово-красный</div>
               <div>weight (кг): 17</div>
             </div>
-          </li>
+          </li>const randomIndex = getRandomInt(0, fruits.length - 1);
+    const randomFruit = fruits.splice(randomIndex, 1)[0];
+    
+    result.push(randomFruit);
           <li class="fruit__item fruit_yellow">
             <div class="fruit__info">
               <div>index: 3</div>
@@ -123,3 +126,4 @@
     <script src="./js/index.js"></script>
   </body>
 </html>
+
